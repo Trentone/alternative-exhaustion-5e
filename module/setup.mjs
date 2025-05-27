@@ -1,12 +1,15 @@
 Hooks.once("init", function() {
   const path = "modules/alternative-exhaustion-5e/module/assets/exhaustion";
   const uuid = "Compendium.alternative-exhaustion-5e.exhaustion.JournalEntry.lMTExo0cxBVCDIgF.JournalEntryPage.cspWveykstnu3Zcv";
-  CONFIG.DND5E.conditionEffects.halfHealth.delete("exhaustion-4");
-  CONFIG.DND5E.conditionEffects.halfMovement.delete("exhaustion-2");
-  CONFIG.DND5E.conditionEffects.noMovement.delete("exhaustion-5");
-  CONFIG.DND5E.conditionEffects.halfHealth.add("exhaustion-6");
-  CONFIG.DND5E.conditionEffects.halfMovement.add("exhaustion-3");
-  CONFIG.DND5E.conditionEffects.noMovement.add("exhaustion-8");  
+  const version = game.settings.get("dnd5e", "rulesVersion");
+  if (version !== "modern"){
+    CONFIG.DND5E.conditionEffects.halfHealth.delete("exhaustion-4");
+    CONFIG.DND5E.conditionEffects.halfMovement.delete("exhaustion-2");
+    CONFIG.DND5E.conditionEffects.noMovement.delete("exhaustion-5");
+    CONFIG.DND5E.conditionEffects.halfHealth.add("exhaustion-6");
+    CONFIG.DND5E.conditionEffects.halfMovement.add("exhaustion-3");
+    CONFIG.DND5E.conditionEffects.noMovement.add("exhaustion-8");
+  }
   CONFIG.DND5E.conditionTypes.exhaustion.levels = 10;
   CONFIG.DND5E.conditionTypes.exhaustion.icon = `${path}.svg`;
   CONFIG.DND5E.conditionTypes.exhaustion.reference = uuid;
