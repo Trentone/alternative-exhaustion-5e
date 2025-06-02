@@ -38,7 +38,7 @@
     },
     "url": "https://github.com/Trentone/alternative-exhaustion-5e",
     "license": "https://raw.githubusercontent.com/Trentone/alternative-exhaustion-5e/main/LICENSE",
-    "manifest": "https://github.com/Trentone/alternative-exhaustion-5e/master/module.json",
+    "manifest": "https://raw.githubusercontent.com/Trentone/alternative-exhaustion-5e/refs/heads/main/module.json",
     "download": "https://github.com/Trentone/alternative-exhaustion-5e/archive/master.zip",
     "description": "A small module for enabling alternative exhaustion rules in the dnd5e system.",
     "packs": [
