@@ -6,11 +6,11 @@ Hooks.once("init", function() {
     CONFIG.DND5E.conditionEffects.halfHealth.delete("exhaustion-4");
     CONFIG.DND5E.conditionEffects.halfMovement.delete("exhaustion-2");
     CONFIG.DND5E.conditionEffects.noMovement.delete("exhaustion-5");
-    CONFIG.DND5E.conditionEffects.halfHealth.add("exhaustion-6");
+    CONFIG.DND5E.conditionEffects.halfHealth.add("exhaustion-5");
     CONFIG.DND5E.conditionEffects.halfMovement.add("exhaustion-3");
-    CONFIG.DND5E.conditionEffects.noMovement.add("exhaustion-8");
+    CONFIG.DND5E.conditionEffects.noMovement.add("exhaustion-6");
   }
-  CONFIG.DND5E.conditionTypes.exhaustion.levels = 10;
+  CONFIG.DND5E.conditionTypes.exhaustion.levels = 7;
   CONFIG.DND5E.conditionTypes.exhaustion.icon = `${path}.svg`;
   CONFIG.DND5E.conditionTypes.exhaustion.reference = uuid;
   const exh = CONFIG.statusEffects.find(e => e.id === "exhaustion");
